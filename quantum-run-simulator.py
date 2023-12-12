@@ -10,12 +10,12 @@ def sha256_compression_function(qc, message_bits, expression):
 
     # Apply controlled-X gates based on the message bits
     for i, bit in enumerate(message_bits[:32]):
-        if bit == '1' and i < 16:  # Ensure i is within the valid range
+        if bit == '1' and i < 16: 
             qc.cx(i, 31)  # Apply CX gate to qubit 16 with control qubit i
 
     # Manually construct the boolean conditions from the expression
     for i, char in enumerate(expression):
-        if char == '1' and i < 16:  # Ensure i is within the valid range
+        if char == '1' and i < 16: 
             qc.x(i)  # Apply X gate to qubit i
 
     # Apply the oracle to each qubit individually
@@ -52,7 +52,7 @@ def main():
             if bit == '1':
                 qc.x(i)
 
-        # Implement the SHA-256 compression function using a quantum oracle search for target address prefix 20d45
+        # Implement the SHA-256 compression function using a quantum oracle search for target address prefix 20d4
         sha256_compression_function(qc, binary_message, expression="message[0] == '1' and message[1] == '0' and message[2] == '1' and message[3] == '1'")
 
         # Measure the final state of the qubits
