@@ -10,3 +10,8 @@ pip3 install qiskit_ibm_provider<br>
 pip3 install qiskit-ibm-runtime
 https://github.com/Qiskit/qiskit-ibm-provider<br>
 https://github.com/Qiskit/qiskit-ibm-runtime<br>
+If you go live you only get 10 minutes free after that IBM charges $1.60 US per minute<br>
+Simulator has no time limit but really just tests the software for errors<br>
+Since there is no real way to verify the software is completing the desired task on actual super computer<br>
+If you decide to pay for time to IBM you are doing this at your own risk and I as the developer am not responsible<br>
+for any loss(es) you may incur. 
