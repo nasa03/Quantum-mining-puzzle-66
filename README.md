@@ -1,5 +1,6 @@
 # Quantum-mining-puzzle-66
 Currently setup to run on the IBM Quantum simulator 32 qubits simulation<br>
+Same basic code to connect to live resources with some adjustments that will be needed<br>
 Setup to match the first 4 characters of the Hash160<br>
 Working on more selective 10 character version<br>
 go to https://quantum.ibm.com/ and get an account so you can be assigned your personal API<br> 
