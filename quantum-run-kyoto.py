@@ -6,7 +6,7 @@ from qiskit import QuantumCircuit
 
 def sha256_compression_function(qc, message_bits, expression):
     # Ensure the length of message_bits is 256
-    assert len(message_bits) == 256, "Message must be 256 bits long"
+    assert len(message_bits) == 256, 
 
     # Apply controlled-X gates based on the message bits
     for i, bit in enumerate(message_bits[:32]):
@@ -26,7 +26,7 @@ def sha256_compression_function(qc, message_bits, expression):
 def main():
     # Load IBM Quantum account
     IBMQ.load_account()
-    provider = IBMProvider()  # No hub, group, or project parameters
+    provider = IBMProvider()  
 
     # Target Bitcoin address
     target_address_hex = "20d45a6a762535700ce9e0b216e31994335db8a5"
@@ -52,7 +52,7 @@ def main():
             if bit == '1':
                 qc.x(i)
 
-        # Implement the SHA-256 compression function using a quantum oracle search for target address prefix 20d45
+        # Implement the SHA-256 compression function using a quantum oracle search for target address prefix 20d4
         sha256_compression_function(qc, binary_message, expression="message[0] == '1' and message[1] == '0' and message[2] == '1' and message[3] == '1'")
 
         # Measure the final state of the qubits
@@ -68,7 +68,7 @@ def main():
         counts = job.result().get_counts(qc)
         final_state = int(list(counts.keys())[0].replace(" ", ""), 2)
 
-        # Check if the generated hash matches the target address characters 10
+        # Check if the generated hash matches the target address characters 10 - increased selectivity
         if hex(final_state)[:10] == hex(target_address_decimal)[:10]:
             print(f"Target address found!")
             print(f"Decimal Value: {decimal_value}")
