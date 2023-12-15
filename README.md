@@ -23,4 +23,8 @@ ibm_brisbane and ibm_osaka would not connect properly for me.<br>
 <ul>support</ul>
 https://github.com/Qiskit/qiskit-ibm-provider<br>
 https://github.com/Qiskit/qiskit-ibm-runtime<br>
-https://qiskit.slack.com/team <br>
+https://qiskit.slack.com/team <P>
+
+If this program helps find your hidden treasures : Tips<br>
+<b>Bitcoin bc1qus09g0n5jwg79gje76zxqmzt3gpw80dcqspsmm  <br>
+Litecoin ltc1q5qtw6fhuqcarv8ysfv7c52gyyfnys3gzlds5s8  </b>
