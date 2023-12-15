@@ -1,4 +1,5 @@
 # Quantum-mining-puzzle-66
+<P><B>The main reason for posting this code is to get more people involved and to refine code so when the quantum computers get faster and the priced decreases we will be ready for that eventuality. You WILL NOT solve puzzle 66 with 10 minutes free time on the quantum computer of today. Save your money and use this as a learning experience and possibly download and refine the code .</B></p>
 Currently setup to run on the IBM Quantum simulator 32 qubits simulation or use quantum-run-kyoto.py for<br>
 Actual connection to IBM Quantum Kyoto, Japan super computer<br>
 Same basic code to connect to live resources with some adjustments that may be needed<br>
