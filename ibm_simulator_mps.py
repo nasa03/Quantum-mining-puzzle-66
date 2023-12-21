@@ -32,7 +32,7 @@ def sha256_compression_function(qc, message_bits, expression):
 def main():
     # Load IBM Quantum account
     IBMQ.load_account()
-    provider = IBMProvider()  # No hub, group, or project parameters
+    provider = IBMProvider()  
 
     # Target Bitcoin address
     target_address_hex = "20d45a6a762535700ce9e0b216e31994335db8a5"
