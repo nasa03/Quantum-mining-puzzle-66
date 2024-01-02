@@ -56,7 +56,7 @@ def main():
         ripemd160.update(sha256_2)
         hash160 = ripemd160.digest()
 
-        qc = QuantumCircuit(32, 32, name="qc", global_phase=0)
+        qc = QuantumCircuit(127, 127, name="qc", global_phase=0)
 
         for i, bit in enumerate(binary_message[:16]):
             if bit == '1':
